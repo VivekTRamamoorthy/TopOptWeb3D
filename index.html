@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poisson's Ratio Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Import maps polyfill -->
+    <!-- Remove this when import maps will be widely supported -->
+    <div class="title">Topology Optimisation 3D </div>
+    <div class="topright">
+        
+        <div id="topright">Itr: </div>
+    </div>
+
+    <script async src="./js/es-module-shims.js"></script>
+    
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./js/three.module.js",
+                "three/addons/": "./js/"
+            }
+        }
+    </script>
+    <script src="./js/readmat.min.js"></script>
+    <script src="./js/loadFile.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
