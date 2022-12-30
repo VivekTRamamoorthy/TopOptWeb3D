@@ -7,21 +7,31 @@ body{
 html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.title {
+.header {
 	position: absolute;
 	top: 10px;
-    padding: 0 30vh;
-	width: 100%;
+	width:100%;
 	text-align: center;
 	z-index: 100;
-	display:block;
-    font-size: 1.5rem;
+	display:grid;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: auto;
 }
-.topright {
-	position: absolute;
-	right: 10px;
-	width: 30%;
+.title{
+	
+	font-size: 1.25rem;
+
+}
+.toprightbox {
 	text-align: center;
 	z-index: 100;
 	display:block;
+	padding: 0 3rem;
+}
+@media (max-width: 600px){
+	.header{
+		display:grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
+	}
 }
