@@ -8,7 +8,11 @@ scene.background = new THREE.Color(0x87CEEB); // background color
 
 // Camera
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-camera.position.set(15,15,15)
+if(window.innerWidth <600){
+    camera.position.set(30,30,30)
+}else{
+    camera.position.set(15,15,15)
+}
 
 // Renderer
 const renderer = new THREE.WebGLRenderer();
